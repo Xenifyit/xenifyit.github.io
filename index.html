@@ -4,111 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrickBD Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-	
-	<!-- header styles -->
-	<div class="header-container">
-        <div class="left-section">
-            <img src="images/logo.png" alt="Site Logo" class="logo">
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">TrickBD Clone</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="login-button">Log In</button>
+                <button class="signup-button">Sign Up</button>
+            </div>
         </div>
-        <div class="right-section">
-            <button class="btn">Log In</button>
-            <button class="btn">Sign Up</button>
+        <nav>
+            <div class="nav-left">
+                <a href="#">Home</a>
+                <a href="#">Notifications</a>
+            </div>
+            <div class="nav-right">
+                <a href="#"><i class="fas fa-dollar-sign"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cta-section">
+            <button class="cta-button">Write an Article</button>
+        </section>
+        
+        <section class="posts-section">
+            <h2>Featured Posts</h2>
+            <div class="post">
+                <img src="image1.jpg" alt="Post Image">
+                <div class="post-content">
+                    <h3 class="post-title"><a href="#">Post Title 1</a></h3>
+                    <p class="post-meta">Published on <span class="post-date">May 27, 2024</span> | <span class="post-comments">5 comments</span> | <span class="post-views">200 views</span></p>
+                </div>
+            </div>
+            <!-- Repeat for more Featured posts -->
+        </section>
+        
+        <section class="posts-section">
+            <h2>Hot Posts</h2>
+            <div class="post">
+                <img src="image2.jpg" alt="Post Image">
+                <div class="post-content">
+                    <h3 class="post-title"><a href="#">Post Title 2</a></h3>
+                    <p class="post-meta">Published on <span class="post-date">May 26, 2024</span> | <span class="post-comments">10 comments</span> | <span class="post-views">500 views</span></p>
+                </div>
+            </div>
+            <!-- Repeat for more Hot posts -->
+        </section>
+        
+        <section class="posts-section">
+            <h2>Recent Posts</h2>
+            <div class="post">
+                <img src="image3.jpg" alt="Post Image">
+                <div class="post-content">
+                    <h3 class="post-title"><a href="#">Post Title 3</a></h3>
+                    <p class="post-meta">Published on <span class="post-date">May 25, 2024</span> | <span class="post-comments">2 comments</span> | <span class="post-views">150 views</span></p>
+                </div>
+            </div>
+            <!-- Repeat for more Recent posts -->
+        </section>
+
+        <section class="category-list">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Technology <span class="article-count">10</span></a></li>
+                <li><a href="#">Health <span class="article-count">8</span></a></li>
+                <li><a href="#">Lifestyle <span class="article-count">15</span></a></li>
+                <li><a href="#">Business <span class="article-count">5</span></a></li>
+            </ul>
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="page-link">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">Next</a>
         </div>
-    </div>
-    
-    <!-- navigation styles -->
-    <div class="nav-container">
-        <div class="left-links">
-            <a href="#">Home</a>
-            <a href="#">Notification</a>
-        </div>
-        <div class="right-icon">
-            <i class="fas fa-dollar-sign"></i>
-        </div>
-    </div>
-    <!-- custom button styles -->
-    <center>
-        <div class='btn btn-danger custom-button'>Be a Blogger! Write your articles.</div>
-    </center>
-    
-   <!-- featured post styles -->
-    <div class="featured-container">
-    	<!-- featured left styles -->
-        <div class="featured-left">
-            <span class="featured-text">Featured Post</span>
-        </div>
-    </div>
-   <!-- post block -->
-    <div class="post-block">
-        <img src="images/sample.jpg" alt="Post Image" class="post-image">
-        <div class="post-content">
-            <h3 class="post-title">Post Title</h3>
-            <p class="post-meta">Published on May 24, 2024 | 5 Comments</p>
-            <p class="post-views">Views: 1234</p>
-        </div>
-    </div>
-    
-    <!-- Hot post styles -->
-    <div class="featured-container">
-    	<!-- featured left styles -->
-        <div class="featured-left">
-            <span class="featured-text">Hot Post</span>
-        </div>
-    </div>
-   <!-- post block -->
-    <div class="post-block">
-        <img src="images/sample.jpg" alt="Post Image" class="post-image">
-        <div class="post-content">
-            <h3 class="post-title">Post Title</h3>
-            <p class="post-meta">Published on May 24, 2024 | 5 Comments</p>
-            <p class="post-views">Views: 1234</p>
-        </div>
-    </div>
-    
-    <!-- Recent post styles -->
-    <div class="featured-container">
-    	<!-- featured left styles -->
-        <div class="featured-left">
-            <span class="featured-text">Recent Post</span>
-        </div>
-    </div>
-   <!-- post block styles -->
-    <div class="post-block">
-        <img src="images/sample.jpg" alt="Post Image" class="post-image">
-        <div class="post-content">
-            <h3 class="post-title">Post Title</h3>
-            <p class="post-meta">Published on May 24, 2024 | 5 Comments</p>
-            <p class="post-views">Views: 1234</p>
-        </div>
-    </div>
-    
-    <!-- pagination styles -->
-    <div class="pagination">
-        <span class="pagination-info">1 of 1,446</span>
-        <button class="pagination-btn">1</button>
-        <button class="pagination-btn">2</button>
-        <button class="pagination-btn">3</button>
-        <button class="pagination-btn">4</button>
-        <button class="pagination-btn">5</button>
-        <button class="pagination-btn">&gt;</button>
-        <button class="pagination-btn">&gt;&gt;</button>
-    </div>
-    
-<!-- category list styles -->
-    <div class="category-list">
-        <ul>
-            <li><a href="#">Category 1 (30)</a></li>
-            <li><a href="#">Category 2 (15)</a></li>
-            <li><a href="#">Category 3 (20)</a></li>
-            <li><a href="#">Category 4 (50)</a></li>
-            <li><a href="#">Category 5 (10)</a></li>
-        </ul>
-    </div>
-    
-    <!-- footer styles -->
+    </main>
+   <footer>
+   <!-- Footer Section -->
     <div class="footer">
         <div class="footer-left">
             <ul class="footer-links">
@@ -129,8 +108,8 @@
     </div>
     <div class="switch">
         <a href="#" class="switch_pc">Switch to PC Version</a>
-    </div>   
-    <script src="https://kit.fontawesome.com/0cf70d400e.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    </div>
+</footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
