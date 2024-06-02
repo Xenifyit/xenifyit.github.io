@@ -8,8 +8,6 @@
 body {
     font-family: Verdana, Arial, sans-serif;
     font-size: 14px;
-    margin: 0;
-    padding: 0;
     background: #dcdee3;
     color: #333;
 }
@@ -19,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: #444;
+    background: #fff;
     color: white;
 }
 
