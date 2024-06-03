@@ -1,0 +1,254 @@
+/* styles.css */
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #dcdee3;
+  font-size: 14px;
+  font-family: Verdana, Arial, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+    
+}
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: white;
+    color: black;
+}
+
+.left-section .logo {
+    flex: 1;
+}
+
+.right-section .btn {
+    background-color: transparent;
+    color: blue;
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.right-section .btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Custom Button */
+.write-article-container {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+.write-article-btn {
+    background-color: rgb(217, 84, 79);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 2px solid rgb(217, 84, 79);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.write-article-btn:hover {
+    background-color: #ffc300;
+    color: #333;
+}
+/* Post Sections */
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgb(38, 42, 43);
+    border-bottom: 2px solid rgb(164, 0, 0);
+    color: white;
+}
+.featured-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-top: 6px;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e8ed;
+    color: black;
+    }
+    
+.left-links .link {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-links .link:hover {
+    text-decoration: underline;
+}
+
+.right-icon, .left-featured {
+    font-size: 18px;
+}
+
+.post-block {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.post-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-title {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.post-meta, .post-views {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    margin-bottom: 5px;
+}
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 14px;
+    background-color: white;
+    margin-top: 4px;
+    border-top: 2px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.page-info {
+    margin-left: 2px;
+    font-size: 14px;
+    color: #333;
+}
+
+.page-btn {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.page-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.page-btn:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+/* Category List */
+.category-list ul {
+    list-style-type: none;
+    padding: 2;
+    margin-left: -8px;
+    margin-top: 6px;
+}
+
+.category-list li {
+	background-color: #fff;
+    padding: 6px;
+    font-size: 16px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.category-list li::before {
+    content: "› ";
+    color: #333;
+    margin-right: 5px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.category-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section  */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+    margin-left: -10px;
+    padding: 2px;
+}
+
+.footer-links a {
+    color: #bdc1c9;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.switch_pc {
+    color: #ddd;
+    border: 1px solid #ddd;
+    padding: 2px;
+    display: block;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+
+.switch a {
+    color: #ddd;
+}
+
+.switch {
+    padding: 12px 12px 12px;
+    margin-bottom: 6px;
+    background-color: #333;
+}
